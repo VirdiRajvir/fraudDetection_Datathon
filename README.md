@@ -13,7 +13,7 @@ Use this file to keep track of things done and things to do.
 
 - Gender 
 
-- Amount transferred 
+- Amount transferred
 
 - Category of purchase 
 
