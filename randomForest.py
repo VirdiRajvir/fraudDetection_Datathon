@@ -1,7 +1,6 @@
 import pandas as pd
-import private.py as pr
 
-data = pd.read_csv(pr.file_path)
+data = pd.read_csv("fraudDetection_Datathon/csv files/undersampled_dataset_with_numerics.csv")
 y = data['is_fraud']
 X = data.drop('is_fraud', axis=1)
 
