@@ -1,103 +1,93 @@
 # Fraud Detection
+
 ---
 
 Use this file to keep track of things done and things to do.
 
-## Pre-Processing 
+## Pre-Processing
 
-### Fields in the dataset 
+### Fields in the dataset
 
-- Age 
+- Age
 
-- Annual income 
+- Annual income
 
-- Gender 
+- Gender
 
 - Amount transferred
 
-- Category of purchase 
+- Category of purchase
 
-- Type of transfer 
+- Type of transfer
 
- 
+### Fields removed (Explain why):
 
-### Fields removed (Explain why): 
+- Credit card number
 
-- Credit card number 
+- First name
 
-- First name 
+- Last name
 
-- Last name 
+- Street
 
-- Street 
+- Zip code
 
-- Zip code 
+- Latitude
 
-- Latitude 
+- Longitude
 
-- Longitude 
+- Unix time
 
-- Unix time 
+- Merchant latitude
 
-- Merchant latitude 
+- Merchant longitude
 
-- Merchant longitude 
+- Transaction number
 
-- Transaction number 
+### Outliers:
 
- 
+Lower quartile: 9.65
 
-### Outliers: 
+Median: 47.52
 
-Lower quartile: 9.65 
+Upper quartile: 83.14
 
-Median: 47.52 
+IQR: 73.49
 
-Upper quartile: 83.14 
+Lower limit under 0
 
-IQR: 73.49 
+Upper limit: 193.375
 
-Lower limit under 0 
+Amount of outliers (where amount > 193.375): 67290
 
-Upper limit: 193.375 
+### Things done:
 
-Amount of outliers (where amount > 193.375): 67290 
+Useless columns removed (eg. Credit card number)
 
- 
+Outliers removed
 
-### Things done: 
+Under-sampling done
 
-Useless columns removed (eg. Credit card number) 
+### Visualization :
 
-Outliers removed 
+Box plot – Outliers
 
-Under-sampling done 
+Histogram – imbalanced dataset
 
+Heatmap – correlation
 
-### Visualization :  
+## Modelling
 
-Box plot – Outliers  
+Chosen models to compare:
 
-Histogram – imbalanced dataset  
+Random Tree - Rajvir
 
-Heatmap – correlation  
-
- 
-
-## Modelling 
-
-Chosen models to compare: 
-
-Random Tree - Rajvir 
-
-SVM - Shaurya 
+SVM - Shaurya
 
 Logistic Regression – Bharath
 
-Evaluation  
+Evaluation
 
-Confusion matrix: -- effectiveness  
+Confusion matrix: -- effectiveness
 
 ROC curve: -- effectiveness
-
-
