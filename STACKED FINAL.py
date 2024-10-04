@@ -87,7 +87,7 @@ def evaluate_performance(y_true, y_pred, dataset_type="Test"):
 evaluate_performance(y_train, y_train_pred, dataset_type="Training")
 evaluate_performance(y_test, y_test_pred, dataset_type="Test")
 
-'''# Feature importance (only for Random Forest model)
+# Feature importance (only for Random Forest model)
 importances = rf_Model.feature_importances_
 sorted_importances = sorted(zip(importances, X_train_final.columns), reverse=True)
 print("Feature importances (top 5):", sorted_importances[:5])
@@ -116,7 +116,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver Operating Characteristic (ROC) Curve - Stacked Model')
 plt.legend(loc='lower right')
 plt.show()
-'''
+
 final_model = stack_model.final_estimator_
 
 # Print the coefficients associated with each base model
