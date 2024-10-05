@@ -1,26 +1,35 @@
 # Fraud Detection
-
 ---
+## How to work with the model:
+### For the Random Forest Model:
+1. Download your test dataset and place it in /csv files 
+2. Call this folder in the data_test variable
+3. Remove the isFraud, Merchant and amt features (if applicable)
+4. Run the code
+5. Obtain the accuracy, precision, recall, f1-scores and AUC-ROC.
 
-Use this file to keep track of things done and things to do.
+- If you have just a single test case you want to obtain the prediction for, use the randomForest_singleTest.py file
 
 ## Pre-Processing
 
 ### Fields in the dataset
 
-- Age
+- Date of Birth
 
-- Annual income
+- Amount
 
 - Gender
 
-- Amount transferred
+- Transaction Time
 
 - Category of purchase
 
-- Type of transfer
+- Merchant name
+  
+- City and State of transaction
 
-### Fields removed (Explain why):
+- City population
+### Fields removed (Low significance to model):
 
 - Credit card number
 
@@ -44,37 +53,15 @@ Use this file to keep track of things done and things to do.
 
 - Transaction number
 
-### Outliers:
-
-Lower quartile: 9.65
-
-Median: 47.52
-
-Upper quartile: 83.14
-
-IQR: 73.49
-
-Lower limit under 0
-
-Upper limit: 193.375
-
-Amount of outliers (where amount > 193.375): 67290
 
 ### Things done:
 
 Useless columns removed (eg. Credit card number)
 
-Outliers removed
 
-Under-sampling done
+Under-sampling done to make the dataset balanced.
 
-### Visualization :
 
-Box plot – Outliers
-
-Histogram – imbalanced dataset
-
-Heatmap – correlation
 
 ## Modelling
 
@@ -84,9 +71,9 @@ Random Tree - Rajvir
 
 SVM - Shaurya
 
-Logistic Regression – Bharath
+Logistic Regression and Stacked – Bharath
 
-Evaluation
+## Evaluation
 
 Confusion matrix: -- effectiveness
 
